@@ -32,78 +32,62 @@ class SecondViewController: UIViewController {
             return 0
         }
     }
-
-
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        countryLabel.text = "Converting from: " + data
+        countryLabel.text = "Converting from: " + data + "!"
         
     }
-    
-    
     
     @IBAction func onTappedYenButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Yen"
         currencySign = "¥"
-        conversionCounter += 1
     }
-    
     @IBAction func onTappedEuroButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Euro"
         currencySign = "€"
-        conversionCounter += 1
     }
-    
     @IBAction func onTappedPoundButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Pound"
         currencySign = "£"
-        conversionCounter += 1
     }
-    
-    
     @IBAction func onTappedPesoButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Peso"
         currencySign = "Mex$"
-        conversionCounter += 1
     }
     
-    
-    
-    
     @IBAction func onTappedCalculateButton(sender: AnyObject) {
-        
         var totalAmount = validateEntry(totalAmountTextField.text!)
-            switch choice {
+        switch choice {
         case "Yen" :
             totalAmount = input * (94/10000)
+            conversionCounter += 1
             
         case "Euro" :
             totalAmount = input * (110/100)
+            conversionCounter += 1
+            
             
         case "Pound" :
             totalAmount = input * (131/100)
+            conversionCounter += 1
             
         case "Peso" :
             totalAmount = input * (54/1000)
+            conversionCounter += 1
             
         default:
             print("Default Case")
         }
         
-        
         totalAmount = Double(round(100*totalAmount)/100)
         totalAmountTextField.text! = " \(currencySign)\(totalAmount)"
-       conversionCounter = NSString(string: conversionCounterLabel.text!).integerValue
         conversionCounterLabel.text = "Conversions: \(conversionCounter)"
-        }
-    
-
-    
-    
-    
+    }
 }
