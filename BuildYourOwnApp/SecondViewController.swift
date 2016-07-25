@@ -47,18 +47,21 @@ class SecondViewController: UIViewController {
         input = validateEntry(amountTextField.text!)
         choice = "Yen"
         currencySign = "¥"
+        conversionCounter += 1
     }
     
     @IBAction func onTappedEuroButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Euro"
         currencySign = "€"
+        conversionCounter += 1
     }
     
     @IBAction func onTappedPoundButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Pound"
         currencySign = "£"
+        conversionCounter += 1
     }
     
     
@@ -66,13 +69,14 @@ class SecondViewController: UIViewController {
         input = validateEntry(amountTextField.text!)
         choice = "Peso"
         currencySign = "Mex$"
+        conversionCounter += 1
     }
     
     
     
     
     @IBAction func onTappedCalculateButton(sender: AnyObject) {
-        conversionCounter += 1
+        
         var totalAmount = validateEntry(totalAmountTextField.text!)
             switch choice {
         case "Yen" :
@@ -93,9 +97,9 @@ class SecondViewController: UIViewController {
         
         
         totalAmount = Double(round(100*totalAmount)/100)
-        totalAmountTextField.text! = " \(currencySign) + \(totalAmount)"
+        totalAmountTextField.text! = " \(currencySign)\(totalAmount)"
        conversionCounter = NSString(string: conversionCounterLabel.text!).integerValue
-        conversionCounterLabel.text = "Conversions: + \(conversionCounter)"
+        conversionCounterLabel.text = "Conversions: \(conversionCounter)"
         }
     
 
