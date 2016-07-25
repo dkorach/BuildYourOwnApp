@@ -10,9 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
-    @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var totalAmountTextField: UITextField!
     @IBOutlet weak var conversionCounterLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
     
     
     

@@ -65,6 +65,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumb_COLOURBOX7435549" translatesAutoresizingMaskIntoConstraints="NO" id="89p-c2-R2x">
+                                <rect key="frame" x="0.0" y="64" width="413" height="672"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFJ-1E-yLi">
                                 <rect key="frame" x="159" y="124" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -75,66 +78,73 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn7-Bw-WrO">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="W59-Cb-3ak"/>
                                             <constraint firstAttribute="width" constant="100" id="rVZ-Jb-yT2"/>
                                         </constraints>
-                                        <state key="normal" title="¥: Yen"/>
+                                        <state key="normal" title="¥: Yen">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="onTappedYenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYW-Rt-uiX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNi-1v-HD7">
                                         <rect key="frame" x="100" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="mYs-Jx-si1"/>
                                             <constraint firstAttribute="width" constant="100" id="zfU-iK-uN0"/>
                                         </constraints>
-                                        <state key="normal" title="€: Euro"/>
+                                        <state key="normal" title="€: Euro">
+                                            <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="onTappedEuroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0e-oq-gqh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAw-B8-g2n">
                                         <rect key="frame" x="200" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Nx6-ua-ckz"/>
                                             <constraint firstAttribute="height" constant="30" id="ooE-uz-zld"/>
                                         </constraints>
-                                        <state key="normal" title="£: Pound"/>
+                                        <state key="normal" title="£: Pound">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="onTappedPoundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0s-OF-npX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIB-7T-cNS">
                                         <rect key="frame" x="300" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.34684354026845637" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="PxW-31-5qN"/>
                                             <constraint firstAttribute="height" constant="30" id="kPQ-Wt-rBv"/>
                                         </constraints>
-                                        <state key="normal" title="Mex$: Peso"/>
+                                        <state key="normal" title="Mex$: Peso">
+                                            <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="onTappedPesoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgJ-GY-tDp"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-H9-xGu">
-                                <rect key="frame" x="257" y="253" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-PF-l0V">
-                                <rect key="frame" x="185" y="342" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="185" y="409" width="48" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Enter Your Amount ($USD): " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d75-4t-LkI">
-                                <rect key="frame" x="23" y="72" width="369" height="44"/>
+                                <rect key="frame" x="25" y="72" width="369" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -145,45 +155,52 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-9s-6si">
-                                <rect key="frame" x="159" y="377" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-QM-qn1">
                                 <rect key="frame" x="228" y="695" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-96-yAC">
-                                <rect key="frame" x="172" y="295" width="69" height="30"/>
-                                <state key="normal" title="Calculate:"/>
+                                <rect key="frame" x="161" y="289" width="96" height="40"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Calculate"/>
                                 <connections>
                                     <action selector="onTappedCalculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pge-Sf-RHL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="89p-c2-R2x">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dm-op-Pz4">
+                                <rect key="frame" x="69" y="222" width="280" height="27"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-9s-6si">
+                                <rect key="frame" x="158" y="438" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ae4-96-yAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7jO-7g-aao"/>
                             <constraint firstItem="zFJ-1E-yLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OnC-Cb-8pi"/>
+                            <constraint firstItem="5Dm-op-Pz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qjr-8Z-yfY"/>
                             <constraint firstItem="zFJ-1E-yLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y3R-Ok-0Yi"/>
                             <constraint firstItem="wo3-9s-6si" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP0-Kq-VVg"/>
                             <constraint firstItem="KPk-QM-qn1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0t-qK-HAn"/>
                             <constraint firstItem="d75-4t-LkI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rpx-zj-aha"/>
                             <constraint firstItem="Vdg-PF-l0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sjZ-4O-92T"/>
-                            <constraint firstItem="G3Z-H9-xGu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tmZ-Ft-txP"/>
                             <constraint firstItem="OGK-jW-ULd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="viV-tz-EBk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="amountTextField" destination="zFJ-1E-yLi" id="BE6-WK-3Gp"/>
                         <outlet property="conversionCounterLabel" destination="KPk-QM-qn1" id="rOw-Wh-ffR"/>
-                        <outlet property="countryLabel" destination="G3Z-H9-xGu" id="VVp-FJ-WcA"/>
+                        <outlet property="countryLabel" destination="5Dm-op-Pz4" id="BqW-sX-ZBd"/>
                         <outlet property="totalAmountTextField" destination="wo3-9s-6si" id="DkU-Pt-VFK"/>
                     </connections>
                 </viewController>
@@ -193,7 +210,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="1253" y="387"/>
+            <point key="canvasLocation" x="1252" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JuH-Qc-fUp">
@@ -216,5 +233,6 @@
     </scenes>
     <resources>
         <image name="Exchange_Rates_Simplified_Why_They_Differ_Between_Currency_Exchangers" width="1459" height="918"/>
+        <image name="thumb_COLOURBOX7435549" width="232" height="320"/>
     </resources>
 </document>
