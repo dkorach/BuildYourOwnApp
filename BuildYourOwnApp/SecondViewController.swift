@@ -70,12 +70,12 @@ class SecondViewController: UIViewController {
             conversionCounter += 1
             
         case "Euro" :
-            totalAmount = input * (110/100)
+            totalAmount = input * (100/110)
             conversionCounter += 1
             
             
         case "Pound" :
-            totalAmount = input * (131/100)
+            totalAmount = input * (100/131)
             conversionCounter += 1
             
         case "Peso" :
