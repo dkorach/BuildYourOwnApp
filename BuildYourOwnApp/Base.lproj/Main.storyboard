@@ -65,12 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter Your Amount ($USD): " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfj-tl-hjH">
-                                <rect key="frame" x="59" y="72" width="297" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFJ-1E-yLi">
                                 <rect key="frame" x="159" y="124" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,25 +131,45 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxD-i1-QFX">
-                                <rect key="frame" x="228" y="394" width="0.0" height="0.0"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Enter Your Amount ($USD): " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d75-4t-LkI">
+                                <rect key="frame" x="23" y="72" width="369" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-t7-pT9">
+                                <rect key="frame" x="147" y="128" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-96-yAC">
-                                <rect key="frame" x="173" y="253" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-96-yAC">
+                                <rect key="frame" x="172" y="253" width="69" height="30"/>
                                 <state key="normal" title="Calculate:"/>
                                 <connections>
                                     <action selector="onTappedCalculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pge-Sf-RHL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-9s-6si">
+                                <rect key="frame" x="159" y="377" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-QM-qn1">
+                                <rect key="frame" x="186" y="695" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ae4-96-yAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7jO-7g-aao"/>
                             <constraint firstItem="zFJ-1E-yLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OnC-Cb-8pi"/>
-                            <constraint firstItem="Rfj-tl-hjH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UeN-wp-j7E"/>
                             <constraint firstItem="zFJ-1E-yLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y3R-Ok-0Yi"/>
+                            <constraint firstItem="wo3-9s-6si" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP0-Kq-VVg"/>
+                            <constraint firstItem="KPk-QM-qn1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0t-qK-HAn"/>
+                            <constraint firstItem="d75-4t-LkI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rpx-zj-aha"/>
                             <constraint firstItem="Vdg-PF-l0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sjZ-4O-92T"/>
                             <constraint firstItem="G3Z-H9-xGu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tmZ-Ft-txP"/>
                             <constraint firstItem="OGK-jW-ULd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="viV-tz-EBk"/>
@@ -163,8 +177,9 @@
                     </view>
                     <connections>
                         <outlet property="amountTextField" destination="zFJ-1E-yLi" id="BE6-WK-3Gp"/>
+                        <outlet property="conversionCounterLabel" destination="KPk-QM-qn1" id="rOw-Wh-ffR"/>
                         <outlet property="countryLabel" destination="G3Z-H9-xGu" id="VVp-FJ-WcA"/>
-                        <outlet property="totalAmountLabel" destination="SxD-i1-QFX" id="Cs2-n0-XJ2"/>
+                        <outlet property="totalAmountTextField" destination="wo3-9s-6si" id="DkU-Pt-VFK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,8 +11,8 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var countryLabel: UILabel!
-    @IBOutlet weak var totalTextField: UITextField!
-    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var totalAmountTextField: UITextField!
+    @IBOutlet weak var conversionCounterLabel: UILabel!
     
     
     
@@ -20,6 +20,7 @@ class SecondViewController: UIViewController {
     var input = 0.00
     var choice = ""
     var currencySign = ""
+    var conversionCounter = 0
     
     
     func validateEntry(entry:String) -> Double {
@@ -51,26 +52,29 @@ class SecondViewController: UIViewController {
     @IBAction func onTappedEuroButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Euro"
+        currencySign = "€"
     }
     
     @IBAction func onTappedPoundButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Pound"
+        currencySign = "£"
     }
     
     
     @IBAction func onTappedPesoButton(sender: AnyObject) {
         input = validateEntry(amountTextField.text!)
         choice = "Peso"
+        currencySign = "Mex$"
     }
     
     
     
     
     @IBAction func onTappedCalculateButton(sender: AnyObject) {
-        var totalAmount = validateEntry(totalAmountLabel.text!)
-        
-        switch choice {
+        conversionCounter += 1
+        var totalAmount = validateEntry(totalAmountTextField.text!)
+            switch choice {
         case "Yen" :
             totalAmount = input * (94/10000)
             
@@ -89,10 +93,12 @@ class SecondViewController: UIViewController {
         
         
         totalAmount = Double(round(100*totalAmount)/100)
-        totalAmountLabel.text! = " \(currencySign) + \(totalAmount)"
-
+        totalAmountTextField.text! = " \(currencySign) + \(totalAmount)"
+       conversionCounter = NSString(string: conversionCounterLabel.text!).integerValue
+        conversionCounterLabel.text = "Conversions: + \(conversionCounter)"
         }
     
+
     
     
     
