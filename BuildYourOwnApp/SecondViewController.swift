@@ -85,6 +85,7 @@ class SecondViewController: UIViewController {
         default:
             print("Default Case")
         }
+        amountTextField.endEditing(true)
         
         totalAmount = Double(round(100*totalAmount)/100)
         totalAmountTextField.text! = " \(currencySign)\(totalAmount)"
